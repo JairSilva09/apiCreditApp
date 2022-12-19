@@ -1,0 +1,22 @@
+{
+  "name": "credit-app",
+  "version": "1.0.0",
+  "description": "rest api credit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "credit_rest"
+  ],
+  "author": "Jair Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
