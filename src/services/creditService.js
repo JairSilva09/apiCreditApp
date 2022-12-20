@@ -1,17 +1,10 @@
-const getAllClients = ()=>{
-    return;
-}
+var admin = require("firebase-admin");
 
-const getOneClient = ()=>{
-    return;
-}
+var serviceAccount = require("../../creditappdb-firebase-adminsdk-z36w1-9357078708.json");
 
-const createNewClient = ()=>{
-    return;
-}
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
 
-module.exports = {
-    getAllClients,
-    getOneClient,
-    createNewClient
-}
+const db = admin.firestore();
+module.exports = { admin, db }

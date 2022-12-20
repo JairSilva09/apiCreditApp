@@ -3,12 +3,12 @@ const router = express.Router();
 const creditController = require("../../controllers/creditController")
 
 router 
-    .get('/',creditController.getAllClients);
+    .get('/',creditController.getAllCustomers);
 router
-    .post('/client',creditController.createNewClient);
+    .get('/customer',creditController.createNewCustomer);
       
 router
-    .get("/:clientId", creditController.getOneClient);     
+    .get("/:customerId", creditController.getOneCustomer);     
       
 // router
 //     .patch("/:clienttId", (req, res) => {
